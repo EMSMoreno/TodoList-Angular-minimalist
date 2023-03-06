@@ -1,0 +1,14 @@
+<div class="app">
+  <header>
+    <h1>Todo List</h1>
+  </header>
+  <app-todos></app-todos>
+</div>
+
+<button (click)="saveData()">Guardar Dados</button>
+<button (click)="loadData()">Carregar Dados</button>
+
+<div *ngIf="session">
+  <h1>Qnt: {{ session.id }}</h1>
+  <h1>Título: {{ session.name }}</h1>
+</div>
